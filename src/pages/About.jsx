@@ -4,6 +4,7 @@ import PageMeta from '../components/PageMeta';
 import Stats from '../components/Stats';
 import FinalCTA from '../components/FinalCTA';
 import Icon from '../components/Icon';
+import asset from '../utils/asset';
 
 const values = [
   [
@@ -123,7 +124,7 @@ export default function About() {
 
           <img
             className="story-photo story-photo-left"
-            src="/images/about-team-top.jpg"
+            src={asset('/images/about-team-top.jpg')}
             alt="Business professionals"
             loading="lazy"
           />
@@ -167,7 +168,7 @@ export default function About() {
 
           <img
             className="story-photo story-photo-right"
-            src="/images/about-team-bottom.jpg"
+            src={asset('/images/about-team-bottom.jpg')}
             alt="Business professionals collaborating"
             loading="lazy"
           />

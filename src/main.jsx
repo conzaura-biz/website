@@ -35,7 +35,7 @@ const root = document.getElementById('root');
 if (!root) throw new Error('Conzaura root element was not found.');
 
 createRoot(root).render(
-  <BrowserRouter basename="/website">
+  <BrowserRouter basename="/">
     <AppErrorBoundary>
       <App />
     </AppErrorBoundary>

@@ -11,6 +11,7 @@ import FAQ from '../components/FAQ';
 import ConsultationForm from '../components/ConsultationForm';
 import FinalCTA from '../components/FinalCTA';
 import Icon from '../components/Icon';
+import asset from '../utils/asset';
 
 import { serviceCategories } from '../data/services';
 import { testimonials } from '../data/testimonials';
@@ -18,11 +19,11 @@ import { faqItems } from '../data/faq';
 
 
 const trustAvatars = [
-  '/avatars/trust-1.png',
-  '/avatars/trust-2.png',
-  '/avatars/trust-3.png',
-  '/avatars/trust-4.png',
-  '/avatars/laura.png'
+  asset('/avatars/trust-1.png'),
+  asset('/avatars/trust-2.png'),
+  asset('/avatars/trust-3.png'),
+  asset('/avatars/trust-4.png'),
+  asset('/avatars/laura.png')
 ];
 
 
@@ -172,7 +173,7 @@ export default function Home() {
 
           <img
             className="hero-smart-image"
-            src="/images/smart-solutions.jpg"
+            src={asset('/images/smart-solutions.jpg')}
             alt="Smart Solutions. Stronger Business. Conzaura business consultation."
           />
 
@@ -273,7 +274,7 @@ export default function Home() {
             <div className="why-image">
 
               <img
-                src="/images/why-choose-person.jpg"
+                src={asset('/images/why-choose-person.jpg')}
                 alt="Business professional working on a laptop"
                 loading="lazy"
               />
@@ -288,7 +289,7 @@ export default function Home() {
             <article>
 
               <div className="why-icon" aria-hidden="true">
-                <img src="/images/icons/why/simple-process.png" alt="" onError={(event) => { event.currentTarget.style.display = 'none'; event.currentTarget.nextElementSibling.style.display = 'block'; }} />
+                <img src={asset('/images/icons/why/simple-process.png')} alt="" onError={(event) => { event.currentTarget.style.display = 'none'; event.currentTarget.nextElementSibling.style.display = 'block'; }} />
                 <span style={{ display: 'none' }}><Icon name="process" size={43} /></span>
               </div>
 
@@ -307,7 +308,7 @@ export default function Home() {
             <article>
 
               <div className="why-icon" aria-hidden="true">
-                <img src="/images/icons/why/expert-guidance.png" alt="" onError={(event) => { event.currentTarget.style.display = 'none'; event.currentTarget.nextElementSibling.style.display = 'block'; }} />
+                <img src={asset('/images/icons/why/expert-guidance.png')} alt="" onError={(event) => { event.currentTarget.style.display = 'none'; event.currentTarget.nextElementSibling.style.display = 'block'; }} />
                 <span style={{ display: 'none' }}><Icon name="user" size={43} /></span>
               </div>
 
@@ -326,7 +327,7 @@ export default function Home() {
             <article>
 
               <div className="why-icon" aria-hidden="true">
-                <img src="/images/icons/why/transparent-support.png" alt="" onError={(event) => { event.currentTarget.style.display = 'none'; event.currentTarget.nextElementSibling.style.display = 'block'; }} />
+                <img src={asset('/images/icons/why/transparent-support.png')} alt="" onError={(event) => { event.currentTarget.style.display = 'none'; event.currentTarget.nextElementSibling.style.display = 'block'; }} />
                 <span style={{ display: 'none' }}><Icon name="handshake" size={43} /></span>
               </div>
 
@@ -345,7 +346,7 @@ export default function Home() {
             <article>
 
               <div className="why-icon" aria-hidden="true">
-                <img src="/images/icons/why/end-to-end-assistance.png" alt="" onError={(event) => { event.currentTarget.style.display = 'none'; event.currentTarget.nextElementSibling.style.display = 'block'; }} />
+                <img src={asset('/images/icons/why/end-to-end-assistance.png')} alt="" onError={(event) => { event.currentTarget.style.display = 'none'; event.currentTarget.nextElementSibling.style.display = 'block'; }} />
                 <span style={{ display: 'none' }}><Icon name="shield" size={43} /></span>
               </div>
 

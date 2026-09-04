@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { navigation } from '../data/navigation';
 import Icon from './Icon';
 import Button from './Button';
+import asset from '../utils/asset';
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -27,7 +28,7 @@ export default function Header() {
       <header className="site-header">
         <div className="container nav-inner">
           <Link to="/" className="brand" aria-label="Conzaura home" onClick={() => setOpen(false)}>
-            <img src="/logo.png" alt="Conzaura" />
+            <img src={asset('/logo.png')} alt="Conzaura" />
           </Link>
 
           <nav className="desktop-nav" aria-label="Primary navigation">

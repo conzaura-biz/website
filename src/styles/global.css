@@ -81,19 +81,7 @@ button { cursor: pointer; }
   font-size: 16px;
   font-weight: 600;
 }
-.desktop-nav a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 100%;
-  bottom: 25px;
-  height: 2px;
-  background: var(--green);
-  transition: right .2s ease;
-}
-.desktop-nav a:hover::after,
-.desktop-nav a.active::after { right: 0; }
-.desktop-nav a.active { color: var(--green); }
+.desktop-nav a.active { color: var(--green); font-weight: 800; }
 .header-cta-wrap { margin-left: auto; }
 .menu-toggle {
   display: none;
@@ -107,6 +95,7 @@ button { cursor: pointer; }
 .mobile-nav.open { display: block; }
 .mobile-nav-inner { display: flex; flex-direction: column; padding: 8px 0 22px; }
 .mobile-nav a { padding: 14px 0; border-bottom: 1px solid #eef0ec; font-size: 14px; font-weight: 600; }
+.mobile-nav a.active { color: var(--green); font-weight: 800; }
 .mobile-nav .btn { margin-top: 16px; }
 
 .btn {
