@@ -518,7 +518,7 @@ button { cursor: pointer; }
 .footer-main { position: relative; min-height: 360px; display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 70px; }
 .footer-intro h2 { margin: 0 0 13px; color: #fff; font: 400 41px/1.02 var(--sans); letter-spacing: -.035em; }
 .footer-intro > p { margin: 0 0 21px; color: rgba(255,255,255,.72); font-size: 14px; }
-.footer-intro > a { display: flex; align-items: center; gap: 11px; width: max-content; margin: 0 0 15px; color: rgba(255,255,255,.8); font-size: 13px; }
+.footer-intro > a { display: flex; align-items: center; gap: 20px; width: max-content; margin: 0 0 15px; color: rgba(255,255,255,.8); font-size: 13px; }
 .footer-intro > a:hover, .footer-links a:hover, .footer-location a:hover, .footer-bottom a:hover { color: #fff; }
 .footer-intro > a svg, .footer-location svg { color: #fff; flex: 0 0 auto; }
 .footer-links { display: flex; gap: 80px; padding-top: 6px; margin-right: 40px; }
@@ -600,18 +600,14 @@ button { cursor: pointer; }
   .why-items { grid-template-columns: 1fr; gap: 38px; padding: 46px 0 60px; }
   .why-items article { max-width: none; }
 
-  .home-page .process-grid { grid-template-columns: 1fr; gap: 14px; }
+  .home-page .process-grid { gap: 14px; overflow-x: auto; }
   .home-page .process-section .section-title.align-left { text-align: center; margin: 0 auto; }
   .home-page .process-section .section-title.align-left p { margin: 0 auto; }
   .home-page .process-label,
-  .home-page .process-step { height: 260px; min-height: 260px; }
+  .home-page .process-step { height: 260px; min-height: 260px; min-width: 200px; }
   .home-page .process-label { padding: 0 24px 28px; }
   .home-page .process-label span { font-size: 25px; }
-  .home-page .process-step { text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; }
-  .home-page .process-step h3 { font-size: 26px; position: static; margin-bottom: 12px; }
-  .home-page .process-step p { font-size: 14px; position: static; }
-  .home-page .process-number { position: static; margin-bottom: 16px; }
-
+  
   .testimonials-heading .section-title.align-left { text-align: center; margin: 0 auto; }
   .testimonials-heading .section-title.align-left p { margin: 0 auto; }
   .testimonial-controls { justify-content: center; }
@@ -2740,10 +2736,7 @@ body { font-size: 16px; }
     margin-top: 34px;
   }
 
-  .home-page .process-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
-  }
+
 }
 
 @media (max-width: 680px) {
@@ -2752,7 +2745,6 @@ body { font-size: 16px; }
   }
 
   .home-page .process-grid {
-    grid-template-columns: 1fr;
     gap: 16px;
   }
 
