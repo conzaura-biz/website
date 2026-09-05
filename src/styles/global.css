@@ -256,7 +256,7 @@ button { cursor: pointer; }
   overflow: hidden;
   isolation: isolate;
 }
-.why-grid { display: grid; grid-template-columns: 45% 55%; min-height: 650px; }
+.why-grid { display: grid; grid-template-columns: 45fr 55fr; min-height: 650px; }
 .why-left { padding-top: 84px; display: flex; flex-direction: column; justify-content: space-between; }
 .why-left .section-title { padding-right: 40px; }
 .why-left .section-title h2 { font-size: clamp(54px, 4vw, 76px); }
@@ -375,7 +375,7 @@ button { cursor: pointer; }
 
 /* Testimonials */
 .testimonials-section { padding-top: 80px; }
-.testimonials-layout { display: grid; grid-template-columns: 27% 73%; gap: 52px; align-items: center; }
+.testimonials-layout { display: grid; grid-template-columns: 27fr 73fr; gap: 52px; align-items: center; }
 .testimonials-heading .section-title h2 { font-size: 61px; }
 .testimonials-carousel { position: relative; min-width: 0; }
 .testimonial-controls { display: flex; justify-content: flex-end; gap: 8px; margin-bottom: 12px; }
@@ -397,7 +397,7 @@ button { cursor: pointer; }
 
 /* FAQ */
 .faq-section { padding-top: 40px; }
-.faq-grid { display: grid; grid-template-columns: 29% 71%; gap: 60px; align-items: start; }
+.faq-grid { display: grid; grid-template-columns: 29fr 71fr; gap: 60px; align-items: start; }
 .faq-side-copy { margin: 14px 0 12px; font-size: 14px; color: var(--ink); }
 .text-link { color: var(--green); font-size: 12px; font-weight: 800; letter-spacing: .02em; }
 .faq-list { border-top: 1px solid var(--line); }
@@ -408,7 +408,7 @@ button { cursor: pointer; }
 
 /* Consultation */
 .consultation-section { padding: 92px 0 100px; background: var(--green); color: #fff; }
-.consultation-grid { display: grid; grid-template-columns: 42% 58%; gap: 84px; align-items: start; }
+.consultation-grid { display: grid; grid-template-columns: 42fr 58fr; gap: 84px; align-items: start; }
 .consultation-copy h2 { margin: 2px 0 22px; color: #fff; font: 500 clamp(56px, 5vw, 78px)/.9 var(--serif); letter-spacing: -.045em; }
 .consultation-copy p { max-width: 480px; margin: 0; color: rgba(255,255,255,.76); font-size: 15px; line-height: 1.55; }
 .consultation-form { max-width: 760px; }
@@ -465,7 +465,7 @@ button { cursor: pointer; }
 
 /* About */
 .about-intro { background: var(--green-soft); padding: 96px 0 88px; }
-.about-lead { display: grid; grid-template-columns: 17% 83%; gap: 44px; align-items: start; margin-bottom: 58px; }
+.about-lead { display: grid; grid-template-columns: 17fr 83fr; gap: 44px; align-items: start; margin-bottom: 58px; }
 .about-lead p { margin: 0; max-width: 1220px; color: #202720; font: 500 27px/1.2 var(--serif); letter-spacing: -.02em; }
 .stats { display: grid; grid-template-columns: repeat(4,1fr); }
 .stat { padding: 28px 24px; text-align: center; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); border-right: 1px solid var(--line); }
@@ -496,7 +496,7 @@ button { cursor: pointer; }
 
 /* Contact */
 .contact-section { padding: 110px 0 96px; background: #fff; }
-.contact-grid { display: grid; grid-template-columns: 62% 38%; gap: 74px; align-items: start; }
+.contact-grid { display: grid; grid-template-columns: 62fr 38fr; gap: 74px; align-items: start; }
 .contact-info .section-title h2 { font-size: clamp(58px,4.9vw,79px); }
 .contact-info .section-title p { max-width: 650px; font-size: 15px; }
 .contact-details { margin-top: 48px; display: grid; gap: 26px; }
@@ -936,7 +936,7 @@ body { font-size: 16px; }
 
 .about-page .about-lead {
   display: grid;
-  grid-template-columns: 16% minmax(0, 84%);
+  grid-template-columns: 16fr 84fr;
   column-gap: 42px;
   align-items: start;
 
