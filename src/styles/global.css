@@ -4,7 +4,7 @@
   --green: #071F02;
   --green-dark: #0A2A04;
   --green-soft: #EFF8F4;
-  --secondary: #F1BD15;
+  --secondary: #C89004;
   --ink: #182118;
   --muted: #68726a;
   --line: #DDE5DE;
@@ -1803,7 +1803,7 @@ body { font-size: 16px; }
 
 .contact-hero-reference {
   width: 100%;
-  background: #C89004;
+  background: var(--secondary);
   color: #ffffff;
 
   position: relative;
