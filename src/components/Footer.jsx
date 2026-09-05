@@ -12,8 +12,8 @@ export default function Footer() {
           <a href="mailto:info@conzaura.co"><Icon name="mail" size={14} />info@conzaura.co</a>
           <div className="socials" aria-label="Social media">
             <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook">f</a>
-            <a href="https://x.com" target="_blank" rel="noreferrer" aria-label="X">𝕏</a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">◎</a>
+            <a href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="Twitter"><Icon name="twitter" size={14} /></a>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram"><Icon name="instagram" size={14} /></a>
             <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
           </div>
         </div>
