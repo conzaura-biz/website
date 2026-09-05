@@ -40,7 +40,7 @@ export default function Header() {
           </nav>
 
           <div className="header-cta-wrap">
-            <Button to="/contact" variant="dark">Free Consultation</Button>
+            <Button to="/contact" variant="dark" icon={false} className="header-cta-btn">FREE CONSULTATION</Button>
           </div>
 
           <button
@@ -62,7 +62,7 @@ export default function Header() {
                 {item.label}
               </NavLink>
             ))}
-            <Button to="/contact" onClick={() => setOpen(false)}>Free Consultation</Button>
+            <Button to="/contact" variant="dark" icon={false} className="header-cta-btn" onClick={() => setOpen(false)}>FREE CONSULTATION</Button>
           </div>
         </div>
       </header>

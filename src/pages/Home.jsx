@@ -123,8 +123,8 @@ export default function Home() {
 
           <div className="hero-actions">
 
-            <Button to="/contact" variant="dark" icon={false} className="hero-consult-btn">
-              FREE CONSULTATION
+            <Button to="/contact" variant="light" className="hero-consult-btn">
+              Get Free Consultation
             </Button>
 
             <Button

@@ -2856,9 +2856,8 @@ body { font-size: 16px; }
 .home-page .hero-actions .hero-consult-btn {
   min-width: 205px;
   padding: 0 18px !important;
-  background: var(--green) !important;
-  color: #fff !important;
-  border-color: var(--green) !important;
+  background: #fff !important;
+  color: var(--green) !important;
 }
 
 .home-page .hero-actions .hero-explore-btn {
