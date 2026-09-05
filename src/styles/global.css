@@ -214,8 +214,8 @@ button { cursor: pointer; }
 .hero-text-cta { color: var(--green); font-size: 13px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
 .hero-text-cta:hover { text-decoration: underline; }
 .home-page .trust-row { display: flex; align-items: center; justify-content: center; gap: 18px; margin-top: 15px; color: #6B726C; font-size: 16px; }
-.home-page .mini-avatars { display: flex; padding-left: 8px; }
-.home-page .mini-avatars img { width: 44px; height: 44px; margin-left: -8px; border: 3px solid #fff; border-radius: 50%; object-fit: cover; object-position: center; background: #F4F6F3; }
+.home-page .mini-avatars { display: flex; padding-left: 16px; }
+.home-page .mini-avatars img { width: 44px; height: 44px; margin-left: -16px; border: 3px solid #fff; border-radius: 50%; object-fit: cover; object-position: center; background: #F4F6F3; }
 .home-page .hero-visual-wrap { width: 100%; overflow: hidden; background: #0D120F; }
 .home-page .hero-smart-image { width: 100%; aspect-ratio: 1080 / 546; object-fit: cover; }
 
