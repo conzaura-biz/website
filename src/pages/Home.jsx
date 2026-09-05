@@ -123,13 +123,14 @@ export default function Home() {
 
           <div className="hero-actions">
 
-            <Button to="/contact" variant="light" className="hero-consult-btn">
+            <Button to="/contact" variant="light" icon={false} className="hero-consult-btn">
               Get Free Consultation
             </Button>
 
             <Button
               onClick={revealServices}
               variant="dark"
+              icon="dotted"
               iconPosition="left"
               className="hero-explore-btn"
             >

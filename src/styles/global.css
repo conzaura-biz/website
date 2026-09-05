@@ -2863,6 +2863,7 @@ body { font-size: 16px; }
   padding: 0 18px !important;
   background: #fff !important;
   color: var(--green) !important;
+  justify-content: center !important;
 }
 
 .home-page .hero-actions .hero-explore-btn {
@@ -2884,7 +2885,7 @@ body { font-size: 16px; }
 }
 
 .home-page .hero-actions .hero-explore-btn .btn-icon {
-  background: #fff !important;
+  background: transparent !important;
   color: var(--green) !important;
 }
 

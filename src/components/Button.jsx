@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Icon from './Icon';
+import asset from '../utils/asset';
 
 export default function Button({
   children,
@@ -17,7 +18,11 @@ export default function Button({
   const classes = `btn btn-${variant} ${iconPosition === 'left' ? 'btn-icon-left' : ''} ${className}`.trim();
   const arrow = icon ? (
     <span className="btn-icon" aria-hidden="true">
-      <Icon name="arrow" size={14} />
+      {icon === 'dotted' ? (
+        <img src={asset('/dotted-arrow.png')} alt="" style={{ height: '11px' }} />
+      ) : (
+        <Icon name="arrow" size={14} />
+      )}
     </span>
   ) : null;
 
