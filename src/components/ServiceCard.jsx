@@ -3,11 +3,11 @@ import Icon from './Icon';
 
 const iconMap = {
   'Firm Registration': { src: '/images/icons/services/firm-registration.png', fallback: 'building' },
-  'IPR (Intellectual Property Rights)': { src: '/images/icons/services/ipr.png', fallback: 'copyright' },
+  'IPR (Intellectual Property Rights)': { src: '/images/icons/services/ipr-v2.png', fallback: 'copyright' },
   'Auditing & Accounting': { src: '/images/icons/services/auditing-accounting.png', fallback: 'audit' },
   'ITR (Income Tax)': { src: '/images/icons/services/income-tax.png', fallback: 'tax' },
   'GST Services': { src: '/images/icons/services/gst.png', fallback: 'gst' },
-  'Other Registrations & Licensing': { src: '/images/icons/services/licensing.png', fallback: 'license' },
+  'Other Registrations & Licensing': { src: '/images/icons/services/licensing-v2.png', fallback: 'license' },
 };
 
 export default function ServiceCard({ category }) {
