@@ -32,7 +32,16 @@ export default function ServiceCard({ category }) {
           <Icon name={icon.fallback} size={54} strokeWidth={2.2} />
         </span>
       </div>
-      <h3>{category.title}</h3>
+      <h3>
+        {category.title.includes('(') ? (
+          <>
+            {category.title.split('(')[0]}
+            <span style={{ fontSize: '18px', color: '#68726a', fontWeight: '400' }}>({category.title.split('(')[1]}</span>
+          </>
+        ) : (
+          category.title
+        )}
+      </h3>
       <div className="service-rule" />
       <ul>
         {category.services.map((service) => (

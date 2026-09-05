@@ -224,10 +224,11 @@ export default function Home() {
 
               <Button
                 onClick={revealServices}
+                icon="dotted"
                 iconPosition="left"
                 className="explore-all-btn"
               >
-                Explore All Services
+                EXPLORE ALL SERVICES
               </Button>
 
             ) : (
