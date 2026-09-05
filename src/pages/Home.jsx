@@ -468,7 +468,7 @@ export default function Home() {
 
 
             <p className="faq-side-copy">
-              Have more questions?<br />
+              <strong>Have more questions?</strong><br />
               Reach out to our friendly support team.
             </p>
 
