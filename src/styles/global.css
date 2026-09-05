@@ -606,16 +606,17 @@ button { cursor: pointer; }
   .why-items { grid-template-columns: 1fr; gap: 38px; padding: 46px 0 60px; }
   .why-items article { max-width: none; }
 
-  .home-page .process-grid { gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; }
+  .home-page .process-grid { display: grid; grid-template-columns: 1fr; gap: 16px; overflow: visible; }
   .home-page .process-section .section-title.align-left { text-align: center; margin: 0 auto; }
   .home-page .process-section .section-title.align-left p { margin: 0 auto; }
   .home-page .process-label,
-  .home-page .process-step { height: 260px; min-height: 260px; min-width: 260px; scroll-snap-align: start; }
+  .home-page .process-step { height: auto; min-height: 260px; min-width: 0; }
+  .home-page .process-step { text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; }
   .home-page .process-label { padding: 0 24px 28px; }
   .home-page .process-label span { font-size: 25px; }
-  .home-page .process-step h3 { font-size: 22px; }
-  .home-page .process-step p { font-size: 13px; }
-  .home-page .process-step .process-number { font-size: 22px; }
+  .home-page .process-step h3 { font-size: 26px; position: static; margin-bottom: 12px; }
+  .home-page .process-step p { font-size: 14px; position: static; margin: 0; }
+  .home-page .process-step .process-number { position: static; margin-bottom: 16px; font-size: 22px; }
   
   .testimonials-heading .section-title.align-left { text-align: center; margin: 0 auto; }
   .testimonials-heading .section-title.align-left p { margin: 0 auto; }
