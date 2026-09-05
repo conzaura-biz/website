@@ -24,7 +24,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="top-strip">Business registration, made simpler <span aria-hidden="true" style={{ display: 'inline-flex', alignItems: 'center' }}><img src={asset('/dotted-arrow.png')} alt="" style={{ height: '11px' }} /></span></div>
+      <div className="top-strip"><div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Business registration, made simpler <span aria-hidden="true" style={{ display: 'inline-flex', alignItems: 'center' }}><img src={asset('/dotted-arrow.png')} alt="" style={{ height: '11px', marginLeft: '6px' }} /></span></div></div>
       <header className="site-header">
         <div className="container nav-inner">
           <Link to="/" className="brand" aria-label="Conzaura home" onClick={() => setOpen(false)}>
