@@ -1,11 +1,18 @@
 import BrandMark from './BrandMark';
 
-export default function SectionTitle({ eyebrow, title, description, align = 'center', light = false }) {
+export default function SectionTitle({
+  eyebrow,
+  eyebrowIcon,
+  title,
+  description,
+  align = 'center',
+  light = false,
+}) {
   return (
     <div className={`section-title align-${align} ${light ? 'is-light' : ''}`}>
       {eyebrow && (
         <div className="eyebrow">
-          <BrandMark />
+          {eyebrowIcon || <BrandMark />}
           <span>{eyebrow}</span>
         </div>
       )}

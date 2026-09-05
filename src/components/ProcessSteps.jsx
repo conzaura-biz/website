@@ -18,22 +18,22 @@ const steps = [
 
 export default function ProcessSteps() {
   return (
-    <div className="process-grid">
-      <div className="process-label">
-        <span>
-          Simple Steps.
-          <br />
-          Expert Support.
-        </span>
-      </div>
+    <div className="container">
+      <div className="process-grid">
+        <div className="process-label">
+          <span>
+            Simple Steps.<br />Expert Support.
+          </span>
+        </div>
 
-      {steps.map((step, index) => (
-        <article className="process-step" key={`${step.number}-${index}`}>
-          <span className="process-number">{step.number}</span>
-          <h3>{step.title}</h3>
-          <p>{step.description}</p>
-        </article>
-      ))}
+        {steps.map((step, index) => (
+          <article className="process-step" key={`${step.number}-${index}`}>
+            <span className="process-number">{step.number}</span>
+            <h3>{step.title}</h3>
+            <p>{step.description}</p>
+          </article>
+        ))}
+      </div>
     </div>
   );
 }
