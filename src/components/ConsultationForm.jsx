@@ -13,19 +13,22 @@ function loadRecaptcha() {
       return;
     }
 
+    // Set up global callback
+    window.onConzauraRecaptchaLoad = () => {
+      resolve(window.grecaptcha);
+    };
+
     const existing = document.querySelector('script[data-conzaura-recaptcha]');
     if (existing) {
-      existing.addEventListener('load', () => resolve(window.grecaptcha), { once: true });
       existing.addEventListener('error', reject, { once: true });
       return;
     }
 
     const script = document.createElement('script');
-    script.src = 'https://www.google.com/recaptcha/api.js?render=explicit';
+    script.src = 'https://www.google.com/recaptcha/api.js?render=explicit&onload=onConzauraRecaptchaLoad';
     script.async = true;
     script.defer = true;
     script.dataset.conzauraRecaptcha = 'true';
-    script.onload = () => resolve(window.grecaptcha);
     script.onerror = reject;
     document.head.appendChild(script);
   });
