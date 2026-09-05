@@ -114,6 +114,11 @@ button { cursor: pointer; }
   text-transform: uppercase;
   transition: transform .18s ease, background .18s ease, color .18s ease, border-color .18s ease;
 }
+
+.header-cta-btn {
+  justify-content: center !important;
+  padding: 0 24px !important;
+}
 .btn:hover { transform: translateY(-1px); }
 .btn:disabled, .btn[aria-disabled="true"] { opacity: .6; cursor: not-allowed; transform: none; }
 .btn-dark { background: var(--green); color: #fff; }
