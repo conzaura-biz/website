@@ -538,7 +538,7 @@ export default function Home() {
 
           <SectionTitle
             eyebrow="LEGAL"
-            title={'Privacy &\u003cbr/>\u003cem>Policy\u003c/em>'}
+            title={'Privacy & <em>Policy</em>'}
             description="Your privacy matters to us. This policy outlines how we collect, use, and protect your personal information."
           />
 
