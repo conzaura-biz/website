@@ -275,7 +275,7 @@ export default function Home() {
             <div className="why-image">
 
               <img
-                src={asset('/images/why-choose-person.jpg')}
+                src={asset('/images/why-choose-person.png')}
                 alt="Business professional working on a laptop"
                 loading="lazy"
               />
