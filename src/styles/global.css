@@ -1280,11 +1280,12 @@ body { font-size: 16px; }
 
 /* ICON */
 
-.about-page .values-grid article svg {
-  width: 30px;
-  height: 30px;
-
+.about-page .values-grid article svg,
+.about-page .values-grid article .value-icon-img {
+  width: 48px;
+  height: 48px;
   color: #071f02;
+  object-fit: contain;
 }
 
 
@@ -1700,9 +1701,10 @@ body { font-size: 16px; }
     padding: 19px 15px;
   }
 
-  .about-page .values-grid article svg {
-    width: 25px;
-    height: 25px;
+  .about-page .values-grid article svg,
+  .about-page .values-grid article .value-icon-img {
+    width: 32px;
+    height: 32px;
   }
 
   .about-page .values-grid h3 {

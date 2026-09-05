@@ -201,28 +201,7 @@ export default function About() {
     <article key={title}>
 
       <span className="value-symbol" aria-hidden="true">
-        <svg
-          viewBox="0 0 34 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M2 8L8 3L14 8L20 3L26 8L32 3"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="3"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-
-          <path
-            d="M8 15L11 18L14 15L17 18L20 15"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="3"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
+        <img src={asset('/images/icons/values-icon.png')} alt="" className="value-icon-img" />
       </span>
 
       <h3>
