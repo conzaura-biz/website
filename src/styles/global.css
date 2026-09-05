@@ -559,7 +559,7 @@ button { cursor: pointer; }
 
 @media (max-width: 680px) {
   :root { --page-gutter: 18px; }
-  .container { width: calc(100% - 28px); }
+  .container { width: calc(100% - 36px); padding: 0; }
   .top-strip { height: 34px; font-size: 9px; }
   .nav-inner { min-height: 68px; }
   .brand, .brand img { width: 148px; }
@@ -569,7 +569,7 @@ button { cursor: pointer; }
 
   .home-page .hero-content { padding: 54px 0 46px; }
   .home-page .hero .eyebrow { font-size: 9px; padding: 8px 10px; }
-  .home-page .hero h1 { margin: 25px 0 17px; font-size: 49px; }
+  .home-page .hero h1 { margin: 25px 0 17px; font-size: 38px; }
   .home-page .hero-content > p { margin-bottom: 28px; font-size: 12px; }
   .home-page .hero-actions { gap: 10px; }
   .home-page .hero-actions .btn { min-height: 45px; padding-left: 14px; font-size: 9px; }
@@ -577,7 +577,7 @@ button { cursor: pointer; }
   .home-page .trust-row { flex-wrap: wrap; font-size: 10px; gap: 10px; }
   .home-page .mini-avatars img { width: 30px; height: 30px; border-width: 2px; }
   .home-page .services-preview { padding: 68px 0 75px; }
-  .home-page .services-preview .section-title h2 { font-size: 43px; }
+  .home-page .services-preview .section-title h2 { font-size: 32px; }
   .home-page .services-preview .section-title p { font-size: 11px; }
   .home-page .service-grid, .services-dark-section .service-grid { grid-template-columns: 1fr; gap: 14px; }
   .home-page .service-card { min-height: 440px; padding: 26px; }
@@ -585,7 +585,7 @@ button { cursor: pointer; }
   .home-page .service-card li { font-size: 12px; }
 
   .why-left { padding-top: 60px; }
-  .why-left .section-title h2 { font-size: 46px; }
+  .why-left .section-title h2 { font-size: 34px; }
   .why-image { min-height: 290px; }
   .why-items { grid-template-columns: 1fr; gap: 38px; padding: 46px 0 60px; }
   .why-items article { max-width: none; }
@@ -613,7 +613,7 @@ button { cursor: pointer; }
 
   .consultation-section { padding: 66px 0; }
   .consultation-copy { text-align: center; }
-  .consultation-copy h2 { font-size: 47px; }
+  .consultation-copy h2 { font-size: 34px; }
   .consultation-copy p { margin: 0 auto; }
   .form-grid { grid-template-columns: 1fr; }
 
