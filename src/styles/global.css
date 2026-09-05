@@ -280,19 +280,25 @@ button { cursor: pointer; }
   position: relative;
   z-index: 1;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: nowrap;
   gap: 26px;
   margin: 0;
-  padding: 0;
+  padding: 0 0 10px 0;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.home-page .process-grid::-webkit-scrollbar {
+  display: none;
 }
 
 .home-page .process-label,
 .home-page .process-step {
-  width: 100%;
+  flex: 0 0 calc(25% - 19.5px);
+  min-width: 240px;
   height: 320px;
   min-height: 320px;
-  min-width: 0;
   overflow: hidden;
   border: 0;
   border-radius: 8px;
@@ -600,13 +606,16 @@ button { cursor: pointer; }
   .why-items { grid-template-columns: 1fr; gap: 38px; padding: 46px 0 60px; }
   .why-items article { max-width: none; }
 
-  .home-page .process-grid { gap: 14px; overflow-x: auto; }
+  .home-page .process-grid { gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; }
   .home-page .process-section .section-title.align-left { text-align: center; margin: 0 auto; }
   .home-page .process-section .section-title.align-left p { margin: 0 auto; }
   .home-page .process-label,
-  .home-page .process-step { height: 260px; min-height: 260px; min-width: 200px; }
+  .home-page .process-step { height: 260px; min-height: 260px; min-width: 260px; scroll-snap-align: start; }
   .home-page .process-label { padding: 0 24px 28px; }
   .home-page .process-label span { font-size: 25px; }
+  .home-page .process-step h3 { font-size: 22px; }
+  .home-page .process-step p { font-size: 13px; }
+  .home-page .process-step .process-number { font-size: 22px; }
   
   .testimonials-heading .section-title.align-left { text-align: center; margin: 0 auto; }
   .testimonials-heading .section-title.align-left p { margin: 0 auto; }
@@ -2644,20 +2653,8 @@ body { font-size: 16px; }
 
 /* Four independent process cards with a visible gap.
    They must never touch or visually merge. */
-.home-page .process-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 28px;
-  width: 100%;
-}
 
-/* Keep each process card independent. */
-.home-page .process-label,
-.home-page .process-step {
-  margin: 0;
-  border-radius: 8px;
-  overflow: hidden;
-}
+
 
 /* Do not show the duplicate paragraph directly underneath
    "Ready to Start Your Business?". The form-side lead remains. */
