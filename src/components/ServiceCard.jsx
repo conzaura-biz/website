@@ -46,14 +46,18 @@ export default function ServiceCard({ category }) {
       <ul>
         {category.services.map((service) => (
           <li key={service}>
-            <span aria-hidden="true">→</span>
+            <span aria-hidden="true" className="service-list-icon">
+              <Icon name="arrow" size={20} strokeWidth={1} />
+            </span>
             <span>{service}</span>
           </li>
         ))}
       </ul>
       <Link className="learn-more" to={contactTarget}>
         <span>Learn More</span>
-        <strong aria-hidden="true">↗</strong>
+        <strong aria-hidden="true">
+          <Icon name="topRightArrow" size={18} strokeWidth={2} />
+        </strong>
       </Link>
     </article>
   );
