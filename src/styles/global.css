@@ -57,9 +57,11 @@ button { cursor: pointer; }
   position: sticky;
   top: 0;
   z-index: 60;
-  background: rgba(255,255,255,.97);
-  border-bottom: 1px dashed #DFE5DF;
+  background: 
+    linear-gradient(to right, #DFE5DF 50%, transparent 50%) bottom / 16px 1px repeat-x,
+    rgba(255,255,255,.97);
   backdrop-filter: blur(14px);
+  border-bottom: none;
 }
 .nav-inner {
   min-height: 94px;
@@ -182,7 +184,10 @@ button { cursor: pointer; }
   top: 0;
   bottom: 0;
   width: 1px;
-  border-left: 1px dashed #E3E8E3;
+  background-image: linear-gradient(to bottom, #E3E8E3 50%, transparent 50%);
+  background-size: 1px 16px;
+  background-repeat: repeat-y;
+  border-left: none;
   pointer-events: none;
   z-index: 2;
 }
