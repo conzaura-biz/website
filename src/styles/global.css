@@ -134,14 +134,15 @@ button { cursor: pointer; }
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  width: max-content;
+  width: fit-content;
+  max-width: 100%;
   padding: 11px 18px;
   border: 1px solid #E2E8E2;
   border-radius: 10px;
   background: #fff;
   color: #354035;
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: .035em;
   text-transform: uppercase;
 }
