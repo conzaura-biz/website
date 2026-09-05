@@ -27,6 +27,7 @@ body {
   line-height: 1.45;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 body.menu-open { overflow: hidden; }
 img { display: block; max-width: 100%; }
@@ -590,14 +591,20 @@ button { cursor: pointer; }
   .why-items article { max-width: none; }
 
   .home-page .process-grid { grid-template-columns: 1fr; gap: 14px; }
+  .home-page .process-section .section-title.align-left { text-align: center; margin: 0 auto; }
+  .home-page .process-section .section-title.align-left p { margin: 0 auto; }
   .home-page .process-label,
   .home-page .process-step { height: 260px; min-height: 260px; }
   .home-page .process-label { padding: 0 24px 28px; }
   .home-page .process-label span { font-size: 25px; }
-  .home-page .process-step h3 { font-size: 26px; bottom: 74px; }
-  .home-page .process-step p { font-size: 14px; bottom: 18px; }
+  .home-page .process-step { text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .home-page .process-step h3 { font-size: 26px; position: static; margin-bottom: 12px; }
+  .home-page .process-step p { font-size: 14px; position: static; }
+  .home-page .process-number { position: static; margin-bottom: 16px; }
 
-  .testimonial-controls { justify-content: flex-start; }
+  .testimonials-heading .section-title.align-left { text-align: center; margin: 0 auto; }
+  .testimonials-heading .section-title.align-left p { margin: 0 auto; }
+  .testimonial-controls { justify-content: center; }
   .testimonial-scroller { margin-right: -14px; padding-right: 14px; }
   .testimonial-card { min-height: 245px; }
 
@@ -605,7 +612,9 @@ button { cursor: pointer; }
   .faq-item button { font-size: 13px; }
 
   .consultation-section { padding: 66px 0; }
+  .consultation-copy { text-align: center; }
   .consultation-copy h2 { font-size: 47px; }
+  .consultation-copy p { margin: 0 auto; }
   .form-grid { grid-template-columns: 1fr; }
 
   .privacy-grid { grid-template-columns: 1fr; gap: 16px; margin-top: 36px; }
