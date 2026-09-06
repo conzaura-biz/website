@@ -2930,7 +2930,7 @@ body { font-size: 16px; }
 }
 
 /* Legal Pages (Privacy / Terms) */
-.legal-page { padding: 120px 0 80px; background: #fff; }
+.legal-page { padding: 120px 0 80px; background: var(--green-soft); }
 .legal-content { max-width: 800px; margin: 0 auto; color: var(--ink); }
 .legal-content h1 { font-family: var(--serif); font-size: 48px; margin-bottom: 24px; color: var(--green); }
 .legal-content h3 { font-family: var(--sans); font-size: 24px; margin: 40px 0 16px; color: var(--green); font-weight: 700; }
