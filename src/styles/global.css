@@ -680,10 +680,8 @@ button { cursor: pointer; }
 
   .footer { padding-top: 52px; }
   .footer-intro h2 { font-size: 31px; }
-  .footer-main { min-height: 0; flex-direction: column; gap: 38px; padding-bottom: 100px; }
+  .footer-main { min-height: 0; flex-direction: column; gap: 38px; padding-bottom: 80px; }
   .footer-links { grid-template-columns: 1fr 1fr; gap: 26px 24px; width: 100%; margin-right: 0; }
-  .footer-location { right: auto; left: 0; bottom: 70px; }
-  .socials { bottom: 25px; margin-top: 0; }
   .footer-bottom { min-height: 0; padding: 19px 0 24px; flex-direction: column; align-items: flex-start; }
   .footer-bottom > div { flex-wrap: wrap; gap: 11px 16px; }
 }
