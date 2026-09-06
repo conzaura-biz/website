@@ -43,7 +43,7 @@ export default function Footer() {
       <div className="container footer-bottom">
         <span>© 2026 Conzaura Pvt Ltd. All rights reserved</span>
         <div>
-          <Link to="/contact">Terms</Link>
+          <Link to="/terms">Terms</Link>
           <Link to="/privacy-policy">Privacy</Link>
           <Link to="/contact">Cookies</Link>
           <Link to="/">Sitemap</Link>
