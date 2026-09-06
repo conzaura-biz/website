@@ -23,60 +23,47 @@ export default function PrivacyPolicy() {
               <div className="privacy-card-number" aria-hidden="true">01</div>
               <h3>Information We Collect</h3>
               <p>
-                We collect personal information that you voluntarily provide when using our
-                services, including your name, email address, phone number, and business
-                details submitted through our consultation forms and contact pages.
+                We may collect various types of information to deliver and enhance our services, including <strong>Personal Information</strong> (name, email, phone), <strong>Account Information</strong> (username, password), <strong>Usage Data</strong> (IP addresses, device information, pages visited), and <strong>Third-Party Data</strong> (shared by trusted partners or social media).
               </p>
             </article>
 
             <article className="privacy-card">
               <div className="privacy-card-number" aria-hidden="true">02</div>
-              <h3>How We Use Your Data</h3>
+              <h3>How We Use Your Information</h3>
               <p>
-                Your information is used to provide business registration and consultation
-                services, respond to your enquiries, send relevant updates, and improve our
-                services. We will never sell your personal data to third parties.
+                We use the collected information to process orders and deliver services, use analytics to enhance website functionality, share updates and promotional offers, and fulfill legal obligations under applicable laws.
               </p>
             </article>
 
             <article className="privacy-card">
               <div className="privacy-card-number" aria-hidden="true">03</div>
-              <h3>Data Security</h3>
+              <h3>Sharing Your Information</h3>
               <p>
-                We implement industry-standard security measures to protect your personal
-                information from unauthorised access, alteration, disclosure, or destruction.
-                All data transmissions are encrypted using SSL technology.
+                We may share your information with service providers (payment processing, hosting), for legal requirements, during business transfers (mergers/acquisitions), and for marketing purposes using aggregated data.
               </p>
             </article>
 
             <article className="privacy-card">
               <div className="privacy-card-number" aria-hidden="true">04</div>
-              <h3>Cookies &amp; Tracking</h3>
+              <h3>Data Security</h3>
               <p>
-                Our website uses cookies to enhance your browsing experience and analyse site
-                traffic. You can manage your cookie preferences through your browser settings.
-                We use analytics tools to understand how visitors interact with our site.
+                We implement industry-standard security measures to protect your personal information. However, no online data transmission can be guaranteed secure. While we strive to protect your data, providing information online is at your own risk.
               </p>
             </article>
 
             <article className="privacy-card">
               <div className="privacy-card-number" aria-hidden="true">05</div>
-              <h3>Third-Party Sharing</h3>
+              <h3>Cookies and Tracking Technologies</h3>
               <p>
-                We may share your information with trusted partners solely for the purpose of
-                providing our services, such as government registrars and legal advisors. All
-                partners are bound by strict confidentiality agreements.
+                We use cookies, web beacons, and other technologies to enhance your browsing experience. You can manage cookie preferences in your browser settings, but some site features may not function properly if you do so.
               </p>
             </article>
 
             <article className="privacy-card">
               <div className="privacy-card-number" aria-hidden="true">06</div>
-              <h3>Your Rights</h3>
+              <h3>Third-Party Websites &amp; Children&#x27;s Privacy</h3>
               <p>
-                You have the right to access, correct, or delete your personal data at any time.
-                You may also opt out of marketing communications. To exercise your rights,
-                contact us at{' '}
-                <a href="mailto:info@conzaura.co">info@conzaura.co</a>.
+                Our website may include links to external services. We are not responsible for their privacy practices. Our services are not intended for children under 18 years of age. If we have collected such data, contact us to delete it.
               </p>
             </article>
           </div>
