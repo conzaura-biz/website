@@ -378,13 +378,7 @@ button { cursor: pointer; }
 .testimonials-layout { display: grid; grid-template-columns: 27fr 73fr; gap: 52px; align-items: center; }
 .testimonials-heading .section-title h2 { font-size: 61px; }
 .testimonials-carousel { position: relative; min-width: 0; }
-.testimonial-controls { display: flex; justify-content: flex-end; gap: 8px; margin-bottom: 12px; }
-.testimonial-controls button { width: 36px; height: 36px; border: 1px solid #DCE4DD; border-radius: 50%; background: #fff; color: var(--green); }
-.testimonial-controls button:hover, .testimonial-controls button:focus-visible { background: var(--green); color: #fff; outline: none; }
-.testimonial-scroller { display: flex; gap: 16px; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scrollbar-width: thin; scrollbar-color: var(--secondary) transparent; padding: 2px 2px 14px; }
-.testimonial-scroller::-webkit-scrollbar { height: 5px; }
-.testimonial-scroller::-webkit-scrollbar-thumb { background: var(--secondary); border-radius: 50px; }
-.testimonial-scroller .testimonial-card { flex: 0 0 min(360px, 82vw); scroll-snap-align: start; }
+.testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .testimonial-card { min-height: 290px; display: flex; flex-direction: column; color: var(--ink); }
 .testimonial-person { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
 .testimonial-person img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 2px solid #fff; background: #f5f5f2; }
@@ -397,7 +391,7 @@ button { cursor: pointer; }
 
 /* FAQ */
 .faq-section { padding-top: 40px; }
-.faq-grid { display: grid; grid-template-columns: 29fr 71fr; gap: 60px; align-items: start; }
+.faq-grid { display: grid; grid-template-columns: 35fr 65fr; gap: 60px; align-items: start; }
 .faq-side-copy { margin: 14px 0 12px; font-size: 14px; color: var(--ink); }
 .text-link { color: var(--green); font-size: 12px; font-weight: 800; letter-spacing: .02em; }
 .faq-list { border-top: 1px solid var(--line); }
@@ -621,7 +615,7 @@ button { cursor: pointer; }
   .testimonials-heading .section-title.align-left { text-align: center; margin: 0 auto; }
   .testimonials-heading .section-title.align-left p { margin: 0 auto; }
   .testimonial-controls { justify-content: center; }
-  .testimonial-scroller { margin-right: -14px; padding-right: 14px; }
+  .testimonials-grid { grid-template-columns: 1fr; }
   .testimonial-card { min-height: 245px; }
 
   .faq-grid { gap: 30px; }

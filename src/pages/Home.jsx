@@ -31,9 +31,6 @@ export default function Home() {
 
   const [showAllServices, setShowAllServices] = useState(false);
 
-  const testimonialRef = useRef(null);
-
-
   /* =====================================================
      SHOW ALL SERVICES
      ===================================================== */
@@ -52,20 +49,6 @@ export default function Home() {
         });
 
     }, 30);
-  };
-
-
-  /* =====================================================
-     TESTIMONIAL SCROLL
-     ===================================================== */
-
-  const scrollTestimonials = (direction) => {
-
-    testimonialRef.current?.scrollBy({
-      left: direction * 360,
-      behavior: 'smooth'
-    });
-
   };
 
 
@@ -398,51 +381,13 @@ export default function Home() {
           </div>
 
 
-          <div className="testimonials-carousel">
-
-            <div
-              className="testimonial-controls"
-              aria-label="Testimonial controls"
-            >
-
-              <button
-                type="button"
-                onClick={() => scrollTestimonials(-1)}
-                aria-label="Previous testimonial"
-              >
-                ←
-              </button>
-
-
-              <button
-                type="button"
-                onClick={() => scrollTestimonials(1)}
-                aria-label="Next testimonial"
-              >
-                →
-              </button>
-
-            </div>
-
-
-            <div
-              className="testimonial-scroller"
-              ref={testimonialRef}
-              tabIndex="0"
-              aria-label="Testimonials"
-            >
-
-              {testimonials.map((item) => (
-
-                <TestimonialCard
-                  item={item}
-                  key={item.name}
-                />
-
-              ))}
-
-            </div>
-
+          <div className="testimonials-grid">
+            {testimonials.slice(0, 3).map((item) => (
+              <TestimonialCard
+                item={item}
+                key={item.name}
+              />
+            ))}
           </div>
 
         </div>
@@ -463,7 +408,7 @@ export default function Home() {
             <SectionTitle
               eyebrow="FAQ"
               align="left"
-              title={'Have <em>questions?</em><br/>Find answers.'}
+              title={'Have <em>questions?</em> Find answers.'}
             />
 
 
