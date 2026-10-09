@@ -310,7 +310,7 @@ button { cursor: pointer; }
   display: flex;
   align-items: flex-end;
   padding: 0 34px 37px;
-  background-color: #D5A000;
+  background-color: var(--secondary);
   background-image:
     radial-gradient(circle at 2% 4%, transparent 0 38px, rgba(255,255,255,.11) 39px 40px, transparent 41px 70px, rgba(255,255,255,.09) 71px 72px, transparent 73px 105px, rgba(255,255,255,.07) 106px 107px, transparent 108px),
     radial-gradient(circle at 7% 28%, transparent 0 70px, rgba(255,255,255,.055) 71px 72px, transparent 73px 110px);
