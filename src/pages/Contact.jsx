@@ -324,7 +324,7 @@ export default function Contact() {
                   OFFICE
                 </span>
 
-                <span className="reference-company-value" style={{ display: 'block', lineHeight: '1.5', fontSize: 'clamp(16px, 2.5vw, 20px)' }}>
+                <span className="reference-company-value" style={{ display: 'block', lineHeight: '1.4' }}>
                   TC No. 46/3173, Santhi Nivas, Near IDBI Bank,<br />
                   Karamana PO, Trivandrum - 695002
                 </span>
