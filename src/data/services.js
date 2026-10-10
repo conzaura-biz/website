@@ -8,13 +8,13 @@ export const serviceCategories = [
   {
     title: 'IPR (Intellectual Property Rights)',
   slug: 'ipr-intellectual-property-rights',
-    icon: 'copyright',
+    icon: 'audit',
     services: ['Trade Mark', 'Trade Mark Hearing', 'Patents', 'Copyrights', 'Industrial Designs']
   },
   {
     title: 'Auditing & Accounting',
   slug: 'auditing-accounting',
-    icon: 'audit',
+    icon: 'copyright',
     services: ['Account Auditing', 'Company Auditing', 'Bookkeeping']
   },
   {
