@@ -3,8 +3,8 @@ import Icon from './Icon';
 
 const iconMap = {
   'Firm Registration': { src: '/images/icons/services/firm-registration.png', fallback: 'building' },
-  'IPR (Intellectual Property Rights)': { src: '/images/icons/services/ipr-v2.png', fallback: 'copyright' },
-  'Auditing & Accounting': { src: '/images/icons/services/auditing-accounting.png', fallback: 'audit' },
+  'IPR (Intellectual Property Rights)': { src: '/images/icons/services/auditing-accounting.png', fallback: 'audit' },
+  'Auditing & Accounting': { src: '/images/icons/services/ipr-v2.png', fallback: 'copyright' },
   'ITR (Income Tax)': { src: '/images/icons/services/income-tax.png', fallback: 'tax' },
   'GST Services': { src: '/images/icons/services/gst-v2.png', fallback: 'gst' },
   'Other Registrations & Licensing': { src: '/images/icons/services/licensing-v3.png', fallback: 'license' },

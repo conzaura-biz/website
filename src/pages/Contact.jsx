@@ -273,10 +273,10 @@ export default function Contact() {
                 </span>
 
                 <a
-                  href="mailto:info@gmail.com"
+                  href="mailto:info@conzaura.co"
                   className="reference-company-value"
                 >
-                  info@gmail.com
+                  info@conzaura.co
                 </a>
 
               </div>
@@ -299,10 +299,10 @@ export default function Contact() {
                 </span>
 
                 <a
-                  href="tel:+911234567890"
+                  href="tel:+917558854049"
                   className="reference-company-value"
                 >
-                  +91 (123) 456-7890
+                  +91 75588 54049
                 </a>
 
               </div>
@@ -312,7 +312,7 @@ export default function Contact() {
 
             {/* OFFICE */}
 
-            <div className="reference-company-item">
+            <div className="reference-company-item" style={{ alignItems: 'flex-start' }}>
 
               <div className="reference-company-icon">
                 <Icon name="pin" size={28} />
@@ -324,8 +324,9 @@ export default function Contact() {
                   OFFICE
                 </span>
 
-                <span className="reference-company-value">
-                  Unknown Area, India
+                <span className="reference-company-value" style={{ display: 'block', lineHeight: '1.5', fontSize: 'clamp(16px, 2.5vw, 20px)' }}>
+                  TC No. 46/3173, Santhi Nivas, Near IDBI Bank,<br />
+                  Karamana PO, Trivandrum - 695002
                 </span>
 
               </div>
