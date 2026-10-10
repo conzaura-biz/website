@@ -221,8 +221,8 @@ button { cursor: pointer; }
 .home-page .hero-smart-image { width: 100%; aspect-ratio: 1080 / 546; object-fit: cover; }
 
 .home-page .services-preview { padding: 94px 0 100px; background: #fff; }
-.home-page .services-preview .section-title h2 { margin-top: 28px; font-size: clamp(58px, 4.5vw, 78px); }
-.home-page .services-preview .section-title p { max-width: 760px; font-size: 17px; }
+.home-page .services-preview .section-title h2 { margin-top: 28px; font-size: clamp(58px, 4.5vw, 78px); line-height: .92; letter-spacing: -.04em; }
+.home-page .services-preview .section-title p { max-width: 760px; font-size: 17px; margin-top: 18px; line-height: 1.5; }
 .home-page .service-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 26px; margin-top: 56px; }
 .home-page .service-card {
   min-height: 640px;
@@ -235,6 +235,7 @@ button { cursor: pointer; }
 }
 .home-page .service-icon { min-height: 62px; color: var(--green); }
 .home-page .service-icon svg { width: 62px; height: 62px; }
+.home-page .service-icon img { width: 62px; height: 62px; object-fit: contain; }
 .home-page .service-card h3 { margin: 32px 0 22px; color: var(--green); font: 600 31px/1.05 var(--serif); letter-spacing: -.02em; }
 .home-page .service-rule { margin-bottom: 25px; border-top: 1px solid #E8ECE8; }
 .home-page .service-card ul { display: grid; gap: 12px; list-style: none; margin: 0; padding: 0; }
@@ -266,6 +267,7 @@ button { cursor: pointer; }
 .why-items { align-self: center; display: grid; grid-template-columns: 1fr 1fr; gap: 40px 30px; padding: 86px 0 74px 40px; }
 .why-items article { max-width: 310px; }
 .why-items article svg { color: var(--green); }
+.why-items article img { width: 43px; height: 43px; object-fit: contain; }
 .why-items h3 { margin: 15px 0 8px; color: var(--green); font: 600 24px/1.04 var(--serif); }
 .why-items p { margin: 0; color: #626D64; font-size: 14px; line-height: 1.48; }
 
@@ -2841,7 +2843,7 @@ body { font-size: 16px; }
 .home-page .hero-actions .hero-consult-btn,
 .home-page .hero-actions .hero-explore-btn {
   min-height: 46px !important;
-  border: 1px solid #DCE4DD !important;
+  border: 1px solid transparent !important;
   border-radius: 5px !important;
   font-size: 11px !important;
   letter-spacing: .035em;
@@ -2851,16 +2853,17 @@ body { font-size: 16px; }
 .home-page .hero-actions .hero-consult-btn {
   min-width: 205px;
   padding: 0 18px !important;
-  background: #fff !important;
-  color: var(--green) !important;
+  background: var(--secondary) !important;
+  color: #fff !important;
   justify-content: center !important;
 }
 
 .home-page .hero-actions .hero-explore-btn {
   min-width: 175px;
   padding: 0 18px 0 8px !important;
-  border-color: transparent !important;
-  background: var(--green) !important;
+  border-color: var(--secondary) !important;
+  background: transparent !important;
+  color: var(--secondary) !important;
 }
 
 .home-page .hero-actions .hero-consult-btn .btn-icon,
@@ -2872,13 +2875,13 @@ body { font-size: 16px; }
 }
 
 .home-page .hero-actions .hero-consult-btn .btn-icon {
-  background: #EEF4EF !important;
-  color: var(--green) !important;
+  background: rgba(255,255,255,.25) !important;
+  color: #fff !important;
 }
 
 .home-page .hero-actions .hero-explore-btn .btn-icon {
   background: transparent !important;
-  color: var(--green) !important;
+  color: var(--secondary) !important;
 }
 
 /* Talk to Sales: restore the light bordered box. */
