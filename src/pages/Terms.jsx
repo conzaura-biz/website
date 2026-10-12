@@ -13,7 +13,7 @@ export default function Terms() {
         <div className="legal-content">
           <h1>Terms of Service</h1>
           <p>
-            By accessing and using our website (conzaura.co), you agree to comply with and be bound by these Terms and Conditions. If you do not agree with these terms, you are advised not to use the Website or any related services.
+            By accessing and using our website (conzaura.com), you agree to comply with and be bound by these Terms and Conditions. If you do not agree with these terms, you are advised not to use the Website or any related services.
           </p>
 
           <h3>Use of the Website</h3>
@@ -78,7 +78,7 @@ export default function Terms() {
           </p>
           <p>
             <strong>Conzaura Pvt Ltd</strong><br />
-            Email: <a href="mailto:info@conzaura.co">info@conzaura.co</a>
+            Email: <a href="mailto:contact@conzaura.com">contact@conzaura.com</a>
           </p>
         </div>
       </div>

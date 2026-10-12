@@ -7,9 +7,9 @@ export default function Footer() {
       <div className="container footer-main">
         <div className="footer-intro">
           <h2>We're here to help</h2>
-          <p>Mon - Sun, 09:00 - 19:00</p>
+          <p>Mon - Sun, 9:30 AM - 5:30 PM</p>
           <a href="tel:+917558854049"><Icon name="phone" size={14} />+91 75588 54049</a>
-          <a href="mailto:info@conzaura.co"><Icon name="mail" size={14} />info@conzaura.co</a>
+          <a href="mailto:contact@conzaura.com"><Icon name="mail" size={14} />contact@conzaura.com</a>
           <div style={{ display: 'flex', gap: '8px', marginTop: '12px', fontSize: '13px', lineHeight: '1.4', color: 'rgba(255,255,255,0.76)', maxWidth: '280px' }}>
             <Icon name="pin" size={14} style={{ flexShrink: 0, marginTop: '2px', color: '#fff' }} />
             <span>TC No. 46/3173, Santhi Nivas, Near IDBI Bank, Karamana PO, Trivandrum - 695002</span>

@@ -74,7 +74,7 @@ export default function PrivacyPolicy() {
           </p>
           <p>
             <strong>Conzaura Pvt Ltd</strong><br />
-            Email: <a href="mailto:info@conzaura.co">info@conzaura.co</a>
+            Email: <a href="mailto:contact@conzaura.com">contact@conzaura.com</a>
           </p>
         </div>
       </div>

@@ -273,10 +273,10 @@ export default function Contact() {
                 </span>
 
                 <a
-                  href="mailto:info@conzaura.co"
+                  href="mailto:contact@conzaura.com"
                   className="reference-company-value"
                 >
-                  info@conzaura.co
+                  contact@conzaura.com
                 </a>
 
               </div>
